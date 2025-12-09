@@ -28,7 +28,4 @@ I do not accept any direct contributions to this project like pull requests or i
 ## License
 This project is released under the MIT LICENSE. You can find the specific terms and conditions outlined in the LICENSE file. This means you're free to utilize, modify, and distribute the project according to the terms of the MIT License.
 
-### Build Your Portfolio:
-Feel free to incorporate this project into your personal portfolio! Showcase your skills and creativity by featuring your adaptations or implementations of this project. Just make sure to follow the guidelines of the MIT License while doing so.
 
-Happy coding!
