@@ -1,0 +1,47 @@
+import "./About.sass";
+import { useEffect } from "react";
+import { Stack } from "./Stack";
+import { Education } from "./Education";
+import { Experience } from "./Experience";
+import { DownloadResume } from "./DownloadResume";
+import { ScrollButton } from "../../components/ScrollButton.jsx";
+import { certificationData } from "../../data/experience.js";
+import { AboutMe } from "./AboutMe";
+
+export const About = () => {
+  useEffect(() => {
+    document.title = "About | Saranya Maghendran";
+    window.scrollTo(0, 0);
+  });
+  return (
+    <main className="about">
+      <AboutMe />
+      <Stack />
+      <DownloadResume />
+      <Experience />
+      <Education />
+      <section className="about__languages">
+        <h2 className="title-font  pink-text h2-tag">Languages</h2>
+        <section>
+          <h3>Tamil</h3>
+          <p>Native</p>
+          <h3>English</h3>
+          <p>Bilingual proficiency</p>
+         
+        </section>
+      </section>
+      <DownloadResume />
+      <section className="about__certifications">
+        <h2 className="title-font  pink-text h2-tag">Certifications</h2>
+        {certificationData.map((info, index) => (
+          <section key={index}>
+            <h3 className="h3-tag">{info.name}</h3>
+            <p>{info.source}</p>
+            <p>{info.date}</p>
+          </section>
+        ))}
+      </section>
+      <ScrollButton />
+    </main>
+  );
+};
